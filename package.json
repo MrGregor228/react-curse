@@ -1,0 +1,22 @@
+{
+  "name": "react-curse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrGregor228/react-curse.git"
+  },
+  "author": "Gregory Kadaner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrGregor228/react-curse/issues"
+  },
+  "homepage": "https://github.com/MrGregor228/react-curse#readme",
+  "dependencies": {
+    "create-react-app": "^4.0.1"
+  }
+}
