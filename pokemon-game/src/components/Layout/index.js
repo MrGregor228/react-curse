@@ -1,7 +1,6 @@
 import s from './style.module.css';
 
-const Layout = ({id, title, description, colorBg, urlBg}) => {
-    console.log(`..${urlBg}`);
+const Layout = ({id, title, colorBg, urlBg, children}) => {
     return (
         
         <section className={s.root} id={id} style={colorBg ? {backgroundColor:colorBg} : {background:`url(${urlBg})`}}>
@@ -11,8 +10,8 @@ const Layout = ({id, title, description, colorBg, urlBg}) => {
                         <h3>{title}</h3>
                         <span className={s.separator}></span>
                     </div>
-                    <div className={s.desc, s.full}>
-                        <p>{description}</p>
+                    <div className={`${s.full} ${s.desc}`}>
+                        {children}
                     </div>
                 </article>
             </div>
